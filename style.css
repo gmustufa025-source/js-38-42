@@ -1,0 +1,166 @@
+/* Base Page Reset and Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px 15px;
+    background-color: #eef2f7;
+    color: #928787;
+}
+
+h1 {
+    text-align: center;
+    color: #1b2835;
+    margin-bottom: 5px;
+}
+
+.main-subtitle {
+    text-align: center;
+    color: #5a738e;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #e3e0e0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* Tab Component Styling */
+.tabs-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #2b323a;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+    color: #2c3e50;
+}
+
+.tab-btn.active {
+    color: #3498db;
+    border-bottom: 3px solid #3498db;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-content {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Assignment Questions Layout */
+.question-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.question-box h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+/* Universal Button Theme */
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition:  0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Outputs UI Elements */
+.output-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    background-color: #ebf5fb;
+    color: #2c3e50;
+    display: inline-block;
+    min-width: 320px;
+    border-radius: 0 6px 6px 0;
+    font-size: 15px;
+    font-family: Consolas, monospace;
+}
+
+.pre-wrap {
+    white-space: pre-line;
+}
+
+/* Authentic K-Electric Bill Layout */
+.bill-card {
+    border: 1px solid #c8ced3;
+    padding: 25px;
+    width: 100%;
+    max-width: 440px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    font-family: Arial, sans-serif;
+    margin-top: 15px;
+}
+
+.bill-card h2 {
+    margin-top: 0;
+    font-size: 26px;
+    color: #111;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 8px;
+}
+
+.bill-card p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #444;
+}
+
+.bill-bold {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Denomination Box styling */
+.note-box {
+    font-size: 16px;
+    font-weight: bold;
+    border-left-color: #2ecc71;
+    background-color: #e8f8f5;
+    color: #117a65;
+}

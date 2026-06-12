@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Mega Assignment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <h1>JavaScript Master Assignment Panel</h1>
+    <p class="main-subtitle">Select an assignment module to view and run tasks</p>
+
+    <div class="tabs-nav">
+        <button class="tab-btn active" onclick="switchTab('date-module', this)">Date Methods (1-14)</button>
+        <button class="tab-btn" onclick="switchTab('func-module', this)">Functions (1-14)</button>
+        <button class="tab-btn" onclick="switchTab('loop-module', this)">Loops & Switch (1-10)</button>
+    </div>
+
+    <div id="date-module" class="tab-content active-content">
+        <h2>Module 1: Date Methods</h2>
+        
+        <div class="question-box">
+            <h3>Q1: Display Current Date & Time</h3>
+            <button onclick="dm_q1()">Run Code</button>
+            <div id="dm-q1-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q2: Current Month in Words</h3>
+            <button onclick="dm_q2()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q3: First 3 Letters of Day</h3>
+            <button onclick="dm_q3()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q4: Weekend Check (Fun day)</h3>
+            <button onclick="dm_q4()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q5: Month Part Check</h3>
+            <button onclick="dm_q5()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q6: Minutes since Jan 1, 1970</h3>
+            <button onclick="dm_q6()">Run Code</button>
+            <div id="dm-q6-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q7: AM or PM Alert</h3>
+            <button onclick="dm_q7()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q8: Last day of 2020 (laterDate)</h3>
+            <button onclick="dm_q8()">Run Code</button>
+            <div id="dm-q8-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q9: Days since Ramadan 2015</h3>
+            <button onclick="dm_q9()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q10: Seconds since beginning of 2015</h3>
+            <button onclick="dm_q10()">Run Code</button>
+            <div id="dm-q10-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q11: Reset hour ahead</h3>
+            <button onclick="dm_q11()">Run Code</button>
+            <div id="dm-q11-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q12: 100 years back</h3>
+            <button onclick="dm_q12()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q13: Calculate Birth Year</h3>
+            <button onclick="dm_q13()">Run Code</button>
+            <div id="dm-q13-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q14: K-Electric Bill</h3>
+            <button onclick="dm_q14()">Generate Bill</button>
+            <div id="dm-q14-out"></div>
+        </div>
+    </div>
+
+    <div id="func-module" class="tab-content">
+        <h2>Module 2: Custom Functions</h2>
+
+        <div class="question-box">
+            <h3>Q1: Browser Date & Time Function</h3>
+            <button onclick="fn_q1()">Run Code</button>
+            <div id="fn-q1-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q2: Greet User Function</h3>
+            <button onclick="fn_q2()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q3: Return Sum of Two Numbers</h3>
+            <button onclick="fn_q3()">Run Code</button>
+            <div id="fn-q3-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q4: Calculator Function</h3>
+            <button onclick="fn_q4()">Open Calculator</button>
+            <div id="fn-q4-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q5: Square Function</h3>
+            <button onclick="fn_q5()">Run Code</button>
+            <div id="fn-q5-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q6: Factorial Computation</h3>
+            <button onclick="fn_q6()">Run Code</button>
+            <div id="fn-q6-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q7: Counting Display</h3>
+            <button onclick="fn_q7()">Run Code</button>
+            <div id="fn-q7-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q8: Compute Hypotenuse (Nested Function)</h3>
+            <button onclick="fn_q8()">Run Code</button>
+            <div id="fn-q8-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q9: Area of a Rectangle (Value vs Variable)</h3>
+            <button onclick="fn_q9()">Run Code</button>
+            <div id="fn-q9-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q10: Check Palindrome String</h3>
+            <button onclick="fn_q10()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q11: Capitalize First Letter of Each Word</h3>
+            <button onclick="fn_q11()">Run Code</button>
+            <div id="fn-q11-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q12: Find Longest Word</h3>
+            <button onclick="fn_q12()">Run Code</button>
+            <div id="fn-q12-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q13: Count Occurrences of a Letter</h3>
+            <button onclick="fn_q13()">Run Code</button>
+            <div id="fn-q13-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q14: The Geometrizer (Circle Properties)</h3>
+            <button onclick="fn_q14()">Run Code</button>
+            <div id="fn-q14-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+    </div>
+
+    <div id="loop-module" class="tab-content">
+        <h2>Module 3: Functions, Switch, While & Do-While</h2>
+
+        <div class="question-box">
+            <h3>Q1: Power Function power(a, b)</h3>
+            <button onclick="lp_q1()">Run Code</button>
+            <div id="lp-q1-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q2: Leap Year Verification</h3>
+            <button onclick="lp_q2()">Run Code</button>
+        </div>
+
+        <div class="question-box">
+            <h3>Q3: Area of Triangle via Semi-perimeter</h3>
+            <button onclick="lp_q3()">Run Code</button>
+            <div id="lp-q3-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q4: Student Marks Average & Percentage</h3>
+            <button onclick="lp_q4()">Run Code</button>
+            <div id="lp-q4-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q5: Custom IndexOf Function</h3>
+            <button onclick="lp_q5()">Run Code</button>
+            <div id="lp-q5-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q6: Delete All Vowels from Sentence</h3>
+            <button onclick="lp_q6()">Run Code</button>
+            <div id="lp-q6-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q7: Count Successive Vowel Pairs (Switch Case)</h3>
+            <button onclick="lp_q7()">Run Code</button>
+            <div id="lp-q7-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q8: Distance Converter (m, feet, inches, cm)</h3>
+            <button onclick="lp_q8()">Run Code</button>
+            <div id="lp-q8-out" class="output-box pre-wrap" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q9: Calculate Overtime Pay</h3>
+            <button onclick="lp_q9()">Run Code</button>
+            <div id="lp-q9-out" class="output-box" style="display:none;"></div>
+        </div>
+
+        <div class="question-box">
+            <h3>Q10: Currency Notes Denomination Counter</h3>
+            <button onclick="lp_q10()">Withdraw Cash</button>
+            <div id="lp-q10-out" class="output-box note-box" style="display:none;"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
